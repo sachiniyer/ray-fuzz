@@ -5,3 +5,6 @@ The goal is to create a testing harness to fuzz the API of Ray with [AFL++](http
 We will evaluate the performance of the harness based on:
 - How many executions per second we reach with the harness
 - How deep into the call stack we are reaching within ray
+
+
+Btw, Ray is a bit weird in that it does not actually host any authentication (and expects isolation as stated [here](https://github.com/ray-project/ray/blob/master/doc/source/ray-security/index.md)).
